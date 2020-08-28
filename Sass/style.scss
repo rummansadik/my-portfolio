@@ -1,0 +1,160 @@
+.navbar{
+    padding: 0;
+    .line{
+        height: 50px;
+        width: 3px;
+        background: white;
+        margin: 12px;
+    }
+    .navbar-brand{
+        font-weight: 600;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        
+        .nav-li{
+            list-style-type: none;  
+            a{
+                display: inline-flex;
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+                transform: scale(1);
+                transition: all 0.3s;
+            }
+            
+            &:hover a{
+                transform: scale(1.5);
+                text-decoration: none;
+                color: crimson;
+            }
+        }
+    }
+}
+
+.header{
+    background-image: url(../images/header-background.jpg);
+    background-size: cover;
+    height: 90vh;
+    margin-top: 13vh;
+    .header-title{
+        font-weight: 600;
+        font-size: 50px;
+        color: teal;
+        padding-top: 10vh;
+    }
+    p{
+        color: crimson;
+        font-size: 30px;
+    }
+    .icons{
+        color: olive;
+    }
+}
+
+.about{
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    height: 80vh;
+    padding-top: 12vh;
+    img{
+        width:50%;
+        height: 40vh;
+        position: relative;
+        left: 15%;
+        border: 20px solid teal;
+    }
+    .img-border{
+        border: 25px solid rgb(38, 207, 207);
+        height: 40vh;
+        width: 50%;
+        position: absolute;
+        top: 70px;
+    }
+    
+}
+
+.skills{
+    background-color: teal;
+    height: 105vh;
+    padding: 10vh 0;
+    
+    p{
+        padding: 2vh 10% 1vh;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none;
+        li{
+            padding: 12px 15%;
+        }
+    }
+    .card{
+        margin-top: 10vh;
+        background-color: burlywood;
+    }
+}
+
+.education{
+    height: 90vh;
+    background-color: burlywood;
+    padding: 10vh 0;
+
+    .date{
+        background-color: tomato;
+        padding: 26px;
+        text-align: center;
+        border-radius: 50%;
+        margin: 20px;
+    }
+    .details{
+        margin: 20px 0 0  10%;
+        padding: 15px;
+        border-radius: 30px;
+        background-color: papayawhip;
+
+    }
+}
+.services{
+    height: 150vh;
+    background-color: teal;
+    padding: 10vh 0;
+    .fab{
+        background-color: crimson;
+        width: 50%;
+        height: 25vh;
+        border-radius: 50%;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.portfolio{
+    background-color: firebrick;
+    img{
+        width: 50%;
+    }
+}
+
+.contact{
+    background-color: darkslategray;
+    padding: 10vh 0;
+}
+.footer{
+    height: 15vh;
+    color: white;
+    background-color: olivedrab;
+    padding: 4vh 0;
+    .row{
+        justify-content: center;
+    }
+}
