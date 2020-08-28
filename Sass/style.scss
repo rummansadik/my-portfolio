@@ -3,42 +3,40 @@
     .line{
         height: 50px;
         width: 3px;
-        background: white;
-        margin: 12px;
+        background: firebrick;
+        margin: 7px 12px;
     }
     .navbar-brand{
         font-weight: 600;
+        color: firebrick;
     }
     ul{
-        display: flex;
         justify-content: space-between;
-        width: 70%;
+        width: 80%;
         
-        .nav-li{
-            list-style-type: none;  
-            a{
-                display: inline-flex;
-                text-decoration: none;
-                color: white;
-                font-weight: 600;
-                transform: scale(1);
-                transition: all 0.3s;
-            }
+        li{
             
+            a{
+                font-weight: 600;
+                transition: all 0.3s;
+                color: firebrick !important;
+            }
             &:hover a{
                 transform: scale(1.5);
-                text-decoration: none;
-                color: crimson;
+                color: crimson !important; 
             }
         }
     }
+}
+
+.fixed-top.scrolled {
+    background: #282A2B;
 }
 
 .header{
     background-image: url(../images/header-background.jpg);
     background-size: cover;
     height: 90vh;
-    margin-top: 13vh;
     .header-title{
         font-weight: 600;
         font-size: 50px;
@@ -156,5 +154,43 @@
     padding: 4vh 0;
     .row{
         justify-content: center;
+    }
+}
+@media screen and (min-width: 1200px){
+
+}
+@media screen and (max-width: 992px){
+    .navbar{
+        ul{
+            width: 100%;
+            padding: 0 10px;
+            li{
+                padding: 0 2px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .navbar{
+        ul{
+            width: 100%;
+            padding: 10vh;
+            li{
+                padding: 1vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .navbar{
+        padding: 0 30px;
+        ul{
+            width: 100%;
+            padding: 10vh;
+            li{
+                padding: 1vh;
+            }
+        }
     }
 }
