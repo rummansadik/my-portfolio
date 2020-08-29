@@ -1,0 +1,263 @@
+.navbar {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  background: #0B594E;
+  padding: 0;
+}
+
+.navbar .line {
+  height: 50px;
+  width: 3px;
+  background: white;
+  margin: 7px 12px;
+}
+
+.navbar .navbar-brand {
+  font-weight: 600;
+  color: white;
+}
+
+.navbar ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.navbar ul li a {
+  font-weight: 600;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white !important;
+}
+
+.navbar ul li:hover a {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: crimson !important;
+}
+
+.fixed-top.scrolled {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.header {
+  background: url(../images/header-background.jpg) repeat scroll center center/cover;
+  height: 100vh;
+  padding-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+}
+
+.header p {
+  color: white;
+  font-size: 13px;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.header .icons {
+  color: white;
+  font-size: 30px;
+}
+
+.header .icons i {
+  margin-right: 20px;
+}
+
+.about {
+  background: #c31432;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#240b36), to(#c31432));
+  background: linear-gradient(to left, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  height: 80vh;
+  padding-top: 12vh;
+}
+
+.about img {
+  width: 50%;
+  height: 40vh;
+  position: relative;
+  left: 15%;
+  border: 20px solid teal;
+}
+
+.about .img-border {
+  border: 25px solid #26cfcf;
+  height: 40vh;
+  width: 50%;
+  position: absolute;
+  top: 70px;
+}
+
+.skills {
+  background-color: teal;
+  height: 105vh;
+  padding: 10vh 0;
+}
+
+.skills p {
+  padding: 2vh 10% 1vh;
+}
+
+.skills a {
+  color: white;
+  text-decoration: none;
+}
+
+.skills ul {
+  list-style-image: url(../images/check.png);
+}
+
+.skills ul li {
+  padding: 12px 15%;
+}
+
+.skills .card {
+  margin-top: 10vh;
+  background-color: burlywood;
+}
+
+.education {
+  height: 90vh;
+  background-color: burlywood;
+  padding: 10vh 0;
+}
+
+.education .date {
+  background-color: tomato;
+  padding: 26px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.education .details {
+  margin: 20px 0 0  10%;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: papayawhip;
+}
+
+.services {
+  height: 150vh;
+  background-color: teal;
+  padding: 10vh 0;
+}
+
+.services img {
+  background-color: white;
+  width: 50%;
+  height: 25vh;
+  border-radius: 50%;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25%;
+}
+
+.portfolio {
+  background-color: firebrick;
+}
+
+.portfolio .nav {
+  background: #0B594E !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin: 50px 25%;
+  border-radius: 50px;
+  padding: 8px;
+}
+
+.portfolio .nav button {
+  font-family: 'Poppins', helvetica;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.portfolio img {
+  width: 100%;
+}
+
+.contact {
+  background-color: darkslategray;
+  padding: 10vh 0;
+}
+
+.footer {
+  height: 15vh;
+  color: white;
+  background-color: olivedrab;
+  padding: 4vh 0;
+}
+
+.footer .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar ul {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .navbar ul li {
+    padding: 0 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    width: 100%;
+    padding: 10vh;
+  }
+  .navbar ul li {
+    padding: 1vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 0 30px;
+  }
+  .navbar ul {
+    width: 100%;
+    padding: 10vh;
+  }
+  .navbar ul li {
+    padding: 1vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
